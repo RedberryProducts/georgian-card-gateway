@@ -1,0 +1,16 @@
+{
+    "name": "redberry/georgian-card-gateway",
+    "authors": [
+        {
+            "name": "Gulverd",
+            "email": "vakhtang.pataraia@gmail.com"
+        },
+        {
+        	"name": "Imedacf",
+        	"email": "imedacf@gmail.com"
+        }
+    ],
+    "require": {
+    	
+    }
+}
