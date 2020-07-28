@@ -2,11 +2,7 @@
 
 Georgian Card Gateway is easy to use package. it takes a lot of work off your back.
 
-<<<<<<< HEAD
-with this package you can set up:
-=======
 With this package you can make:
->>>>>>> e7a8ba085b6d709abfdada16824c05aa5c267b9f
 - regular payments ( requiring input of user's credit card information on each transaction)
 - recurrent payments (basically with this method you can save user's credit card into merchant and then make payments without asking user credit card info every time. )
 
@@ -32,15 +28,9 @@ BACK_URL_S=https://your-website.ge/payment/succeed
 BACK_URL_F=https://your-website.ge/payment/failed
 ```
 ###### MERCHANT_ID
-<<<<<<< HEAD
-represents your merchant's identificator, which will be given to you from BOG.
-###### PAGE_ID
-represents the identificator of the payments page, which can be customized and styled with your preferences.
-=======
 Represents your merchant's identificator, which will be given to you from BOG.
 ###### PAGE_ID
 Represents the identificator of the payments page, which can be customized and styled with your preferences.
->>>>>>> e7a8ba085b6d709abfdada16824c05aa5c267b9f
 ###### ACCOUNT_ID
 On merchant there can be meny pos terminals. And on each terminal there will be account, on which the payments will be directed. Most likely you will need only one terminal. But in this doc we will also see how can we manage payments on multiple terminals.
 ###### CCY
@@ -123,11 +113,7 @@ class GeorgianCard implements GeorgianCardHandler
 }
 ```
 
-<<<<<<< HEAD
-now bind it into our app service provider:
-=======
 Now bind it into our app service provider:
->>>>>>> e7a8ba085b6d709abfdada16824c05aa5c267b9f
 ```php
 namespace App\Providers;
 
@@ -162,11 +148,7 @@ $transaction
       -> set( 'rame'  , 'rume' ) 
       -> execute();
 ```
-<<<<<<< HEAD
-all this fields that we set when making new instance of Transaction, will be available for us to see with bunch of other BOG info, when our GeorgianCard -> update() method will be executed. and in that moment you can save db records and so on...
-=======
 All this fields that we set when making new instance of Transaction, will be available for us to see with bunch of other BOG info, when our GeorgianCard -> update() method will be executed. and in that moment you can save db records and so on...
->>>>>>> e7a8ba085b6d709abfdada16824c05aa5c267b9f
 
 ## Making refund of the transaction
 ---
@@ -183,8 +165,4 @@ $refund
 ```
 
 ##### TrxId and RRN
-<<<<<<< HEAD
 TrxId and RRNs are transaction ids, which will be given to you in the GeorgianCard -> update method, you have to save it in DB and then use it to make refund of that transaction.
-=======
-TrxId and RRNs are transaction ids, which will be given to you in the GeorgianCard -> update method, you have to save it in DB and then use it to make refund of that transaction.
->>>>>>> e7a8ba085b6d709abfdada16824c05aa5c267b9f
